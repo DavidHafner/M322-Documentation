@@ -2,4 +2,5 @@
 
 ## Mitglieder
 
-- James
+- James Binks
+- Bastian Kind
