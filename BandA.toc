@@ -14,3 +14,6 @@
 \contentsline {subsubsection}{\numberline {1.3.3}Schlussfolgerungen für die App}{5}{}%
 \contentsline {subsection}{\numberline {1.4}Benutzereigenschaften}{6}{}%
 \contentsline {subsection}{\numberline {1.5}Nutzungsanforderungen}{7}{}%
+\contentsline {subsubsection}{\numberline {1.5.1}Einleitung}{7}{}%
+\contentsline {subsubsection}{\numberline {1.5.2}User Stories}{7}{}%
+\contentsline {subsubsection}{\numberline {1.5.3}Priorisierung}{7}{}%
