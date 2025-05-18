@@ -143,6 +143,156 @@
 \end{itemize}
 \pagebreak
 \subsection{Benutzereigenschaften}
+\subsubsection{Warum werden Benutzereigenschaften erfasst}
+\begin{itemize}
+	\item Wir erfassen Benutzereigenschaften, damit wir uns besser vorstellen können, welche Bedürfnisse die Benutzer haben und wie sie sich verhalten.
+	\item Wenn wir die Ziele der Benutzer erfassen, also was die Benutzer auf der App wollen, können wir schauen, dass sie ihre Ziele einfacher erreichen können.\
+	\item Die Benutzerbedürfnisse erfassen wir, damit wir diese in den Vordergrund stellen können. So priorisieren wir das, was den Nutzern am wichtigsten ist.
+\end{itemize}
+\subsubsection{Personas}
+\begin{itemize}
+	\item \textbf{Familie Müller} (Eltern 40/38, Kinder 8/12)
+	\subitem \textbf{Hintergrund}: Tagesausflug mit Kindern, wenig technikaffin
+	\subitem \textbf{Ziele}: 
+	\begin{itemize}
+		\item Schneller Zugang zu kindgerechten Inhalten
+		\item Offline-Karten für Wanderwege
+		\item Spielerische Quiz-Funktion
+	\end{itemize}
+	\subitem \textbf{Schmerzpunkte}: 
+	\begin{itemize}
+		\item Komplexe Menüs
+		\item Lange Ladezeiten ohne Netz
+	\end{itemize}
+	
+	\item \textbf{Hans Meier} (65, Eisenbahn-Enthusiast)
+	\subitem \textbf{Hintergrund}: Pensioniert, historisch interessiert
+	\subitem \textbf{Ziele}: 
+	\begin{itemize}
+		\item Technische Details zu Lokomotiven
+		\item Historische Vergleichsbilder
+		\item Präzise GPS-Positionsanzeige
+	\end{itemize}
+	\subitem \textbf{Schmerzpunkte}: 
+	\begin{itemize}
+		\item Kleine Schriftgrössen
+		\item Fehlende Tiefeninformationen
+	\end{itemize}
+	
+	\item \textbf{Laura Bianchi} (28, internationale Touristin)
+	\subitem \textbf{Hintergrund}: Backpacking in der Schweiz
+	\subitem \textbf{Ziele}: 
+	\begin{itemize}
+		\item Mehrsprachige Audio-Guides (EN/IT)
+		\item Social-Media-Integration
+		\item Datensparsame Nutzung
+	\end{itemize}
+	\subitem \textbf{Schmerzpunkte}: 
+	\begin{itemize}
+		\item Hoher Datenverbrauch
+		\item Unklare Wegführung
+	\end{itemize}
+	
+	\item \textbf{Teenager Alex} (15, lokaler Jugendlicher)
+	\subitem \textbf{Hintergrund}: Nutzt App mit Schulkameraden
+	\subitem \textbf{Ziele}: 
+	\begin{itemize}
+		\item Gamification (Badges sammeln)
+		\item Foto-Challenges mit Hashtags
+		\item Schnelles Teilen von Entdeckungen
+	\end{itemize}
+	\subitem \textbf{Design-Implikation}: 
+	\begin{itemize}
+		\item Einfache Social-Media-Buttons
+		\item Visuell ansprechende Achievements
+	\end{itemize}
+\end{itemize}
+\subsubsection{Verbesserungen}
+\begin{itemize}
+	\item \textbf{Familie Müller (Kinder-Modus)}
+	\subitem \textbf{Problem}: 
+	\begin{itemize}
+		\item Quiz-Fragen nicht altersgerecht differenziert
+		\item Eltern/Kinder nutzen dieselbe Oberfläche
+	\end{itemize}
+	\subitem \textbf{Anpassung}: 
+	\begin{itemize}
+		\item „Kinder-Modus“ mit vereinfachten Fragen + Emojis
+		\item Eltern können Modus per Passcode sperren
+	\end{itemize}
+	\subitem \textbf{Design-Implikation}: 
+	\begin{itemize}
+		\item Toggle-Schalter „Kindermodus“ in der Navigation
+		\item Visuelle Icons statt Textbuttons
+	\end{itemize}
+	
+	\item \textbf{Hans Meier (Schriftgrösse)}
+	\subitem \textbf{Problem}: 
+	\begin{itemize}
+		\item Standard-Schrift für Outdoor-Nutzung zu klein
+		\item Keine Anpassungsmöglichkeiten
+	\end{itemize}
+	\subitem \textbf{Anpassung}: 
+	\begin{itemize}
+		\item Schriftgrössen-Slider (100\%–200\%)
+		\item Kontrastmodus für Sonnenlicht
+	\end{itemize}
+	\subitem \textbf{Design-Implikation}: 
+	\begin{itemize}
+		\item Dynamische UI-Anpassung aller Textelemente
+		\item Persistente Einstellung über App-Neustart
+	\end{itemize}
+	
+	\item \textbf{Laura Bianchi (Sprachumschaltung)}
+	\subitem \textbf{Problem}: 
+	\begin{itemize}
+		\item Sprachwechsel erfordert 4 Klicks
+		\item Keine Gerätesprachen-Erkennung
+	\end{itemize}
+	\subitem \textbf{Anpassung}: 
+	\begin{itemize}
+		\item Automatische Sprachwahl basierend auf Gerät
+		\item Sprach-Icon in Top-Leiste
+	\end{itemize}
+	\subitem \textbf{Design-Implikation}: 
+	\begin{itemize}
+		\item Dropdown-Menü mit Flaggen-Icons
+		\item Sprachwechsel ohne App-Neustart
+	\end{itemize}
+	
+	\item \textbf{Teenager Alex (Gamification)}
+	\subitem \textbf{Problem}: 
+	\begin{itemize}
+		\item Achievements motivieren nicht nachhaltig
+		\item Keine Social-Media-Verlinkung
+	\end{itemize}
+	\subitem \textbf{Anpassung}: 
+	\begin{itemize}
+		\item „Badge-System“ mit Leveln (Bronze–Platin)
+		\item Direktes Teilen auf Instagram/TikTok
+	\end{itemize}
+	\subitem \textbf{Design-Implikation}: 
+	\begin{itemize}
+		\item Progress-Bar im Profil-Bereich
+		\item Ein-Klick-Share-Buttons
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{Priorisierung der Anpassungen}
+\begin{center}
+	\begin{tabular}{|l|l|l|}
+		\hline
+		\textbf{Anpassung} & \textbf{Relevanz} & \textbf{Aufwand} \\ 
+		\hline
+		Schriftgrössen-Slider & Hoch & Niedrig \\
+		Kinder-Modus & Mittel & Mittel \\
+		Automatische Sprachwahl & Hoch & Hoch \\
+		Badge-System & Mittel & Hoch \\
+		\hline
+	\end{tabular}
+\end{center}
+
+\textit{Begründung: Schriftgrössen-Slider wurde priorisiert, da essenziell für Barrierefreiheit und einfach umsetzbar.}
 \pagebreak
 \subsection{Nutzungsanforderungen}
 \subsubsection{Einleitung}

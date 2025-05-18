@@ -13,7 +13,11 @@
 \contentsline {subsubsection}{\numberline {1.3.2}Analyseergebnisse}{5}{}%
 \contentsline {subsubsection}{\numberline {1.3.3}Schlussfolgerungen für die App}{5}{}%
 \contentsline {subsection}{\numberline {1.4}Benutzereigenschaften}{6}{}%
-\contentsline {subsection}{\numberline {1.5}Nutzungsanforderungen}{7}{}%
-\contentsline {subsubsection}{\numberline {1.5.1}Einleitung}{7}{}%
-\contentsline {subsubsection}{\numberline {1.5.2}User Stories}{7}{}%
-\contentsline {subsubsection}{\numberline {1.5.3}Priorisierung}{7}{}%
+\contentsline {subsubsection}{\numberline {1.4.1}Warum werden Benutzereigenschaften erfasst}{6}{}%
+\contentsline {subsubsection}{\numberline {1.4.2}Personas}{6}{}%
+\contentsline {subsubsection}{\numberline {1.4.3}Verbesserungen}{7}{}%
+\contentsline {subsubsection}{\numberline {1.4.4}Priorisierung der Anpassungen}{8}{}%
+\contentsline {subsection}{\numberline {1.5}Nutzungsanforderungen}{9}{}%
+\contentsline {subsubsection}{\numberline {1.5.1}Einleitung}{9}{}%
+\contentsline {subsubsection}{\numberline {1.5.2}User Stories}{9}{}%
+\contentsline {subsubsection}{\numberline {1.5.3}Priorisierung}{9}{}%
