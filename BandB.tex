@@ -1,0 +1,94 @@
+\documentclass[10pt]{article}
+\usepackage{amsmath} 
+\usepackage{fontspec}
+\setmainfont{JetBrains Mono}
+\setmainfont[NFSSFamily=dayrom]{JetBrains Mono}
+\usepackage[a4paper, margin=12mm]{geometry}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+\usepackage{amsmath}
+
+\DeclareSymbolFont{digits}{TU}{dayrom}{m}{n}
+\AtBeginDocument{
+	\DeclareMathSymbol{0}{\mathalpha}{digits}{`0}
+	\DeclareMathSymbol{1}{\mathalpha}{digits}{`1}
+	\DeclareMathSymbol{2}{\mathalpha}{digits}{`2}
+	\DeclareMathSymbol{3}{\mathalpha}{digits}{`3}
+	\DeclareMathSymbol{4}{\mathalpha}{digits}{`4}
+	\DeclareMathSymbol{5}{\mathalpha}{digits}{`5}
+	\DeclareMathSymbol{6}{\mathalpha}{digits}{`6}
+	\DeclareMathSymbol{7}{\mathalpha}{digits}{`7}
+	\DeclareMathSymbol{8}{\mathalpha}{digits}{`8}
+	\DeclareMathSymbol{9}{\mathalpha}{digits}{`9}
+}
+
+% Footer-Einstellungen
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{datetime}
+\newdateformat{mydate}{\twodigit{\THEDAY}.\twodigit{\THEMONTH}.\THEYEAR}
+\mydate
+\pagestyle{fancy}
+\fancyhf{} % Löscht alle Kopf- und Fusszeilen
+\fancyfoot[C]{\thepage\ -\ \today\ \copyright\ Bastian\ Kind,\ James\ Binks,\ Mark\ Matkovic\ und\ David\ Hafner} % Setzt den Footer
+
+\begin{document}
+	\section{Band B}
+	\subsection{Grundsätze der Dialoggestaltung verstehen}
+	\subsubsection[Konzept der Gebrauchs Tauglichkeit]{Das Konzept der Gebrauchstauglichkeit}
+	\begin{itemize}
+		\item Effektivität: Wie genau und vollständig können Nutzer ihr Ziel mit der App erreichen. Gibt es Errors oder sind Informationen Unvollständig? Bsp. herausfinden wo sie im park sind oder welche informationen mit einem Ausstellungsstück in verbindung stehen.
+		
+		\item Effizienz: Wie effizient kommen die Nutzer in der App and die erwünschten Informationen. Braucht es viele unnötige clicks, sind die Seiten logisch kategorisiert, sind die Seiten zweckmässig angeschrieben, gibt es eine Suchfunktion, etc.
+				 
+		\item Zufriedenstellung: Ist der Nutzer nach der Interaktion mit der App zufrieden. Hat er alles gefunden was gesucht wurde und möchte er die App wieder verwenden oder ist er frustriert weil nichts dort war wo es sein sollte.
+	\end{itemize}
+	\subsubsection [Benuzterschnitstellen und Interaktonsprinzipien erkläret] {Benutzerschnittstellen und Interaktonsprinzipien erklärt}
+	\begin{itemize}
+		\item Was ist eine Benutzerschnittstelle
+		\subitem Eine Benutzerschnittstelle ist der Punkt wo sich Mensch und Maschiene treffen. Eine der Simpelsten Versionen davon ist der Lichtschalter. Einmal drauf drücken und die Maschiene (das Licht) Reagiert auf den Menschlichen Input und ist somit die Simpelste Benutzerschnittstelle.
+		
+		In Unserem fall ist für uns eine Benutzerschnittstelle ein User Interface/ Die GUI unser Applikation. Dort werdenalli Inputs der User getätigt und unsererer Applikation weitergeleitet.
+		
+		\item Was sind Interaktionsprinzipien
+		\subitem Interaktonsprinzipien sind nach ISO 9241-110 normungen für die Wichtigsten Eigenschafte der Benutzerschnitstellen und besteht aus diesen 7 Prinzipien welche mit Beispiel eines Standard Webshops erklärt werden.
+		\begin{itemize}
+			\item Aufgabenangemessenheit
+			\subitem Es gibt an wie gut die Webseite ihren zweck werfüllt. In einem Onlineshop wäre es ob man seine Einkäufe Problemlos in den Warenkorb bewegen kann ohne das es Errors gibt.
+			\item Selbstbeschreibungsfähigkeit
+			\subitem Es gibt an wie intuitive die Webseite gestaltet ist. Bsp sollen Symbole verwendet werden um das Suchfenster oder den Warenkorb zu zeigen damit nicht für alles eine Lange erklärung gebraucht wird.
+			\item Erwartungskonformität
+			\subitem Bei Manche arten von Webseiten wie Onlineshops gibt es eine gewisse erwartungsstellung an das Layout der Webseit. Bsp. es gibt vorgeschlagen produkte, Banner mit Rabatt aktionen und ein suchfenster.
+			\item Erlernbarkeit
+			\subitem Besagt das eine Seite schnell erlernbar sein sollte und man nicht dafür zuerst eine Weiterbildung abschleissen muss. Bei einem Onlineshop geht es hier hauptsächlich um die Intuitive gestaltung
+			\item Steuerbarkeit
+			\subitem Besagt das der Nutzer immer in kontrolle sein sollte. Der Nutzer soollte immer wisse wo er ist und wie man zurück kommt. Bsp. eie gute Navbar mit einem Homebutton
+			\item Robustheit
+			\subitem Besagt das es inputsicherheit gibt damit der Nutzer möglichst wenig Fehler machen kann.
+			\item Benutzer:innen-Bindung
+			\subitem Besagt das es Feedback möglichkeiten von den Nutzern gibt.
+		\end{itemize}
+	\end{itemize}
+	\subsubsection[geforderte Benutzerschnittstelle]{geforderte Benutzerschnittstelle}
+	Eine der Meist gebrauchten Benutzerschnittstellen wird die Hauptseite sein wenn man versucht die Seite zu einem Bestimmten ort zu finden. Dies kann über das Manuelle Navigieren der Seiten, der eingebauten Suchfunktion oder vor Ort mit dem Scannen eines QR codes gemacht werden.
+	\begin{itemize}
+		\item Aufgabenangemessenheit: Es gibt mehrere möglichkeiten an die Gewünschten Informationen zu kommen und limitiert einen nicht bei der Informationsbeschaffug. Bsp. Man könnte sich eine Seite nach der Anderen durchnavigiren und alle umliegenden Informationen auch auffassen. Wenn man aber grade davor steht oder sich spezifisch für eines Interessiert kann man auch nur direkt Relevante schnell finden.
+		
+		\item Selbstbeschreibungsfähigkeit: Die Hauptseite wird intuitive mit symbolen dargestellt sein (bsp. ein QR-code zum drücken um einen QR-code scannen zu können oder eine Lupe für die Suchfunktion) damit es für alle, auch kleine Kinder, verständlich ist. Es wird auch immer eine Navbar geben welche angibt wo man sich auf der Seite befindet und einen Knopf der dierekt zur Hauptseite zurückführt.
+		
+		\item Erwartungskonformität: Der fokus der Seite wird immer auf der angabe der Informationen liegen da das der Hauptnutzen für die meisten User sein wird. Es sollten alle wichtigen infos als erstes angezeigt werden und deteilliere infos wie technische deepdives sollte eher am ende oder etwas abseits sein.
+		
+		\item Erlernbarkeit: Die Erlernbarkeit hängt sehr mit der Selbstbeschgreibungsfähigkeit zusammen und sollte deshalb durch die Intuitive gestaltung der Applikation bereits gewährleistet sein. Wenn für etwas ein Tutorial notwendig sein würde ist es wahrscheinlich schlecht gestaltet oder unnötig kompliziert.
+		
+		\item Steuerbarkeit: Die Steuerbarkeit wird damit garantiert das keine Automatischen, nicht vom User gepromteten Popups oder Weiterleitungen verwendet werden und der User immer eine Navbar hat die ihm erlaubt zur Hauptseite zurückzukehren und die Parent Seiten der zurzeit angezeigten Seiten zu Erreichen.
+		
+		\item Robustheit gegen Nutzungsfehler: Das Fehlverwenden des QR-codes und der Seite zu Seite Navigation ist bereits sehr erschwehrt und in der Suchfunktion sollen, falls keine übereinstimmung vorhanden ist, ähnliche sachen angezeigt werden. Überall wo der User sonst einen Input geben kann wird genügend inputsicherheit und selbstbeschreibende Fehlermeldungen implementiert.
+		
+		\item Benutzer:innen-Bindung: Eine Seite mit mögliche Kontaktionformationen der Personen die die Seite und den Park betreiben damit man Rückmeldungen geben kann. 
+		
+	\end{itemize}
+	
+	
+	
+\end{document}
