@@ -1,13 +1,18 @@
 \documentclass[10pt]{article}
 \usepackage{amsmath} 
 \usepackage{fontspec}
-\setmainfont{JetBrains Mono}
-\setmainfont[NFSSFamily=dayrom]{JetBrains Mono}
 \usepackage[a4paper, margin=12mm]{geometry}
 \usepackage{graphicx}
-\graphicspath{ {./images/} }
-
+\usepackage{titlesec}
 \usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{datetime}
+\usepackage[hidelinks]{hyperref}
+
+\setmainfont{JetBrains Mono}
+\setmainfont[NFSSFamily=dayrom]{JetBrains Mono}
+\graphicspath{ {./images/} }
 
 \DeclareSymbolFont{digits}{TU}{dayrom}{m}{n}
 \AtBeginDocument{
@@ -23,16 +28,45 @@
 	\DeclareMathSymbol{9}{\mathalpha}{digits}{`9}
 }
 
+% subsubsubsection
+\titleclass{\subsubsubsection}{straight}[\subsection]
+\newcounter{subsubsubsection}[subsubsection]
+\renewcommand\thesubsubsubsection{\thesubsubsection.\arabic{subsubsubsection}}
+\renewcommand\theparagraph{\thesubsubsubsection.\arabic{paragraph}} % optional; useful if paragraphs are to be numbered
+
+\titleformat{\subsubsubsection}
+{\normalfont\normalsize\bfseries}{\thesubsubsubsection}{1em}{}
+\titlespacing*{\subsubsubsection}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{5}{\z@}%
+	{3.25ex \@plus1ex \@minus.2ex}%
+	{-1em}%
+	{\normalfont\normalsize\bfseries}}
+\renewcommand\subparagraph{\@startsection{subparagraph}{6}{\parindent}%
+	{3.25ex \@plus1ex \@minus .2ex}%
+	{-1em}%
+	{\normalfont\normalsize\bfseries}}
+\def\toclevel@subsubsubsection{4}
+\def\toclevel@paragraph{5}
+%\def\toclevel@paragraph{6}
+\def\toclevel@subparagraph{6}
+\def\l@subsubsubsection{\@dottedtocline{4}{7em}{4.5em}}
+\def\l@paragraph{\@dottedtocline{5}{10em}{5em}}
+\def\l@subparagraph{\@dottedtocline{6}{14em}{6em}}
+\makeatother
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+
 % Footer-Einstellungen
-\usepackage{fancyhdr}
-\usepackage{amsmath}
-\usepackage{datetime}
 \newdateformat{mydate}{\twodigit{\THEDAY}.\twodigit{\THEMONTH}.\THEYEAR}
 \mydate
 \pagestyle{fancy}
 \fancyhf{} % Löscht alle Kopf- und Fusszeilen
 \fancyfoot[C]{\thepage\ -\ \today\ \copyright\ Bastian\ Kind,\ James\ Binks,\ Mark\ Matkovic\ und\ David\ Hafner} % Setzt den Footer
-
 \begin{document}
 	\section{Band B}
 	\subsection{Grundsätze der Dialoggestaltung verstehen}
@@ -46,28 +80,28 @@
 	\end{itemize}
 	\subsubsection [Benuzterschnitstellen und Interaktonsprinzipien erkläret] {Benutzerschnittstellen und Interaktonsprinzipien erklärt}
 	\begin{itemize}
-		\item Was ist eine Benutzerschnittstelle
-		\subitem Eine Benutzerschnittstelle ist der Punkt wo sich Mensch und Maschiene treffen. Eine der Simpelsten Versionen davon ist der Lichtschalter. Einmal drauf drücken und die Maschiene (das Licht) Reagiert auf den Menschlichen Input und ist somit die Simpelste Benutzerschnittstelle.
+		\item \textbf{Was ist eine Benutzerschnittstelle}
+		\\ Eine Benutzerschnittstelle ist der Punkt wo sich Mensch und Maschiene treffen. Eine der Simpelsten Versionen davon ist der Lichtschalter. Einmal drauf drücken und die Maschiene (das Licht) Reagiert auf den Menschlichen Input und ist somit die Simpelste Benutzerschnittstelle.
 		
 		In Unserem fall ist für uns eine Benutzerschnittstelle ein User Interface/ Die GUI unser Applikation. Dort werdenalli Inputs der User getätigt und unsererer Applikation weitergeleitet.
 		
-		\item Was sind Interaktionsprinzipien
-		\subitem Interaktonsprinzipien sind nach ISO 9241-110 normungen für die Wichtigsten Eigenschafte der Benutzerschnitstellen und besteht aus diesen 7 Prinzipien welche mit Beispiel eines Standard Webshops erklärt werden.
+		\item \textbf{Was sind Interaktionsprinzipien}
+		\\ Interaktonsprinzipien sind nach ISO 9241-110 normungen für die Wichtigsten Eigenschafte der Benutzerschnitstellen und besteht aus diesen 7 Prinzipien welche mit Beispiel eines Standard Webshops erklärt werden.
 		\begin{itemize}
-			\item Aufgabenangemessenheit
-			\subitem Es gibt an wie gut die Webseite ihren zweck werfüllt. In einem Onlineshop wäre es ob man seine Einkäufe Problemlos in den Warenkorb bewegen kann ohne das es Errors gibt.
-			\item Selbstbeschreibungsfähigkeit
-			\subitem Es gibt an wie intuitive die Webseite gestaltet ist. Bsp sollen Symbole verwendet werden um das Suchfenster oder den Warenkorb zu zeigen damit nicht für alles eine Lange erklärung gebraucht wird.
-			\item Erwartungskonformität
-			\subitem Bei Manche arten von Webseiten wie Onlineshops gibt es eine gewisse erwartungsstellung an das Layout der Webseit. Bsp. es gibt vorgeschlagen produkte, Banner mit Rabatt aktionen und ein suchfenster.
-			\item Erlernbarkeit
-			\subitem Besagt das eine Seite schnell erlernbar sein sollte und man nicht dafür zuerst eine Weiterbildung abschleissen muss. Bei einem Onlineshop geht es hier hauptsächlich um die Intuitive gestaltung
-			\item Steuerbarkeit
-			\subitem Besagt das der Nutzer immer in kontrolle sein sollte. Der Nutzer soollte immer wisse wo er ist und wie man zurück kommt. Bsp. eie gute Navbar mit einem Homebutton
-			\item Robustheit
-			\subitem Besagt das es inputsicherheit gibt damit der Nutzer möglichst wenig Fehler machen kann.
-			\item Benutzer:innen-Bindung
-			\subitem Besagt das es Feedback möglichkeiten von den Nutzern gibt.
+			\item \textbf{Aufgabenangemessenheit}
+			\\ Es gibt an wie gut die Webseite ihren zweck werfüllt. In einem Onlineshop wäre es ob man seine Einkäufe Problemlos in den Warenkorb bewegen kann ohne das es Errors gibt.
+			\item \textbf{Selbstbeschreibungsfähigkeit}
+			\\ Es gibt an wie intuitive die Webseite gestaltet ist. Bsp sollen Symbole verwendet werden um das Suchfenster oder den Warenkorb zu zeigen damit nicht für alles eine Lange erklärung gebraucht wird.
+			\item \textbf{Erwartungskonformität}
+			\\ Bei Manche arten von Webseiten wie Onlineshops gibt es eine gewisse erwartungsstellung an das Layout der Webseit. Bsp. es gibt vorgeschlagen produkte, Banner mit Rabatt aktionen und ein suchfenster.
+			\item \textbf{Erlernbarkeit}
+			\\ Besagt das eine Seite schnell erlernbar sein sollte und man nicht dafür zuerst eine Weiterbildung abschleissen muss. Bei einem Onlineshop geht es hier hauptsächlich um die Intuitive gestaltung
+			\item \textbf{Steuerbarkeit}
+			\\ Besagt das der Nutzer immer in kontrolle sein sollte. Der Nutzer soollte immer wisse wo er ist und wie man zurück kommt. Bsp. eie gute Navbar mit einem Homebutton
+			\item \textbf{Robustheit}
+			\\ Besagt das es inputsicherheit gibt damit der Nutzer möglichst wenig Fehler machen kann.
+			\item \textbf{Benutzer:innen-Bindung}
+			\\ Besagt das es Feedback möglichkeiten von den Nutzern gibt.
 		\end{itemize}
 	\end{itemize}
 	\subsubsection[geforderte Benutzerschnittstelle]{geforderte Benutzerschnittstelle}
@@ -88,6 +122,12 @@
 		\item Benutzer:innen-Bindung: Eine Seite mit mögliche Kontaktionformationen der Personen die die Seite und den Park betreiben damit man Rückmeldungen geben kann. 
 		
 	\end{itemize}
+	\subsection{Benutzerschnittstelle entwerfen}
+	\subsection{Interaktionsprinzipien anwenden}
+	\subsection{Eingabeformate kennzeichnen}
+	\subsubsection{title}
+	\subsubsubsection{test}
+	\subsection{Hilfe und Feedback integrieren}
 	
 	
 	
