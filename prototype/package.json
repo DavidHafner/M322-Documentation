@@ -1,0 +1,22 @@
+{
+	"name": "nuxt-app",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare"
+	},
+	"dependencies": {
+		"@pinia/nuxt": "latest",
+		"@tailwindcss/vite": "latest",
+		"daisyui": "latest",
+		"nuxt": "latest",
+		"pinia": "latest",
+		"tailwindcss": "latest",
+		"vue": "latest",
+		"vue-router": "latest"
+	}
+}
