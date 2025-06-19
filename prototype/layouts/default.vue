@@ -8,7 +8,7 @@
 </template>
 
 <script lang="ts" setup>
-const menuOpen = ref(true);
+const menuOpen = ref();
 </script>
 
 <style></style>

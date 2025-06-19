@@ -1,7 +1,11 @@
 <template>
 	<div
 		class="transition-all origin-top bg-base-100/50 backdrop-blur-xs z-40 w-screen h-screen absolute top-0 left-0 duration-500 flex flex-col items-center pt-20"
-		:class="{ 'scale-y-0': props.menuOpen }"
+		:class="{
+			'menu-close': props.menuOpen === false,
+			'menu-open': props.menuOpen === true,
+			'menu-start': props.menuOpen === undefined,
+		}"
 	>
 		<div class="join">
 			<div>
@@ -51,7 +55,7 @@
 
 <script lang="ts" setup>
 const pageStore = usePageStore();
-const props = defineProps<{ menuOpen: boolean }>();
+const props = defineProps<{ menuOpen: boolean | undefined }>();
 const route = useRoute();
 const clearPath = (page: { name: string; path: string }) => {
 	if (route.path !== page.path) {
@@ -60,4 +64,46 @@ const clearPath = (page: { name: string; path: string }) => {
 };
 </script>
 
-<style></style>
+<style>
+.menu-close {
+	animation: menu-close 500ms;
+	opacity: 0;
+}
+
+.menu-start {
+	animation: menu-close 0ms;
+	opacity: 0;
+}
+.menu-open {
+	animation: menu-open 500ms;
+}
+@keyframes menu-close {
+	0% {
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+	75% {
+		opacity: 1;
+		transform: scale(1, 0.08);
+	}
+	100% {
+		transform: scale(1, 0.08);
+		opacity: 0;
+	}
+}
+
+@keyframes menu-open {
+	0% {
+		transform: scale(1, 0.08);
+		opacity: 0;
+	}
+	25% {
+		opacity: 1;
+		transform: scale(1, 0.08);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+}
+</style>

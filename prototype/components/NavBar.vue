@@ -21,7 +21,9 @@
 
 <script lang="ts" setup>
 const pageStore = usePageStore();
-const menuOpen = defineModel<boolean>("menu-open", { required: true });
+const menuOpen = defineModel<boolean | undefined>("menu-open", {
+	required: true,
+});
 </script>
 
 <style></style>

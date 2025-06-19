@@ -1,5 +1,5 @@
 <template>
-	<button @click="toggleMenu">
+	<button @click="toggleMenu" style="z-index: 99999">
 		<svg
 			view-box="0 0 100 100"
 			height="30"
@@ -36,17 +36,23 @@
 </template>
 
 <script lang="ts" setup>
-const isOpen = defineModel<boolean>("menu-open", { required: true });
+const isOpen = defineModel<boolean | undefined>("menu-open", {
+	required: true,
+});
 const toggleMenu = () => {
-	isOpen.value = !isOpen.value;
-	if (isOpen.value) {
-		rect1.value?.classList.add("close");
-		rect2.value?.classList.add("close");
-		rect3.value?.classList.add("close");
+	if (isOpen.value === undefined) {
+		isOpen.value = true;
 	} else {
+		isOpen.value = !isOpen.value;
+	}
+	if (isOpen.value) {
 		rect1.value?.classList.remove("close");
 		rect2.value?.classList.remove("close");
 		rect3.value?.classList.remove("close");
+	} else {
+		rect1.value?.classList.add("close");
+		rect2.value?.classList.add("close");
+		rect3.value?.classList.add("close");
 	}
 };
 
