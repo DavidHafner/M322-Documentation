@@ -217,9 +217,70 @@
 	Beim Feld für den Vornamen würde ich auch einen Stern platzieren. Statt Mustermann würde ich dann Max verwenden.\\
 	Das Email Feld habe ich oben schon als Beispiel verwendet. Dieses würde ich auch mit einem Stern markieren und wie schon gesagt als Platzhalter \textit{max.mustermann@example.com} verwenden.\\
 	Für den Text (die Nachricht) würde ich auch einen Stern verwenden. Als Platzhalter würde ich «\textit{Ihre Nachricht hier}» verwenden.
+	
+	\pagebreak
+	
 	\subsection{Hilfe und Feedback integrieren}
 	
+	\subsubsection{Feedback für User aktionen}
 	
+	Ziel: User informieren dass die Anwendung auf ihren Input reagiert.
+	
+	\begin{itemize}
+		\item Erfolgs Nachricht
+			\subitem Nach Formular abgabe
+				\subsubitem "Deine Änderungen wurden gespeichert"
+				\subsubitem \textit{(Bestätigung der erfolgreichen Verarbeitung von Nutzereingaben)}
+		\item Fehlermeldungen
+			\subitem Fehlende Felder in Formular
+				\subsubitem "Bitte fülle alle mit einem * Markierten Felder aus"
+				\subsubitem \textit{(Klare Kennzeichung von Pflichtfeldern gemäss ISO 9241-110)}
+			\subitem E-Mail Validierung fehlgeschlagen
+				\subsubitem "Invalides E-Mail Format. Beispiel: user@example.com"
+				\subsubitem \textit{(Formatvorlge zur sofortigen Fehlerbehebung)}
+		\item Ladeanzeiger / Animationen
+			\subitem Datenabfragen
+				\subsubitem Loading Spinner / Wheel
+				\subsubitem \textit{(Visuelles Feedback bei kurzen Wartezeiten <3s)}
+			\subitem File upload
+				\subsubitem Progress Bar
+				\subsubitem \textit{(Prozentuale Anzeige für längere Prozesse)}
+			\subitem Kontent Ladescreen
+				\subsubitem Skellet-Screen (normaler screen ohne Daten)
+				\subsubitem \textit{(Wahrung des Aussehens und Format während des Ladens)}
+	\end{itemize}
+	\subsubsection{Hilfefunktionen}
+	
+	Ziel: Benutzer unterstützen, falls sie unsicher sind, wie das Kontaktformular ausgefüllt werden soll.
+	
+	\begin{itemize}
+		\item Platzhaltertext in Eingabefeldern
+			\subitem Beispiel für das "Name"-Feld:
+				\subsubitem \texttt{"Max Mustermann"}
+			\subitem Beispiel für das "Betreff"-Feld:
+				\subsubitem \texttt{"Betreff meiner Nachricht"}
+				\subsubitem \textit{(Führt den Nutzer durch implizite Beispiele)}
+		
+		\item Automatische Vorschläge
+			\subitem Bei der "E-Mail"-Eingabe:
+				\subsubitem \texttt{"Meinten Sie: example@domain.com?"}
+				\subsubitem \textit{(Typos erkennen durch Domain-Check)}
+	\end{itemize}
+	
+	\subsubsection{Erweitertes Feedback}
+	
+	Ziel: Für eine Polierte UI, um Hilfe und Feedback dynamisch zu kombinieren.
+	
+	\begin{itemize} 
+		\item Real-time validation
+			\subitem zBs. Passwort Stärke Messer
+		\item Rückgänig machen Option
+			\subitem zBs. Wenn man eine Formular Sende Bestätigung bekommt, das man diese inerhalb von 5s noch zurück ziehen kann.
+		\item Interaktives Tutorial
+			\subitem zBs. Ein Step-by-step popup für neue Nutzer
+	\end{itemize}
+	
+	\pagebreak
 	
 	\section{Band C}
 	\subsection{Elemente einer Benutzerschnittstelle kennen und anwenden}
