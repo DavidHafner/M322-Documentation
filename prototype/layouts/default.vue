@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="h-screen w-screen overflow-hidden">
 		<NavBar v-model:menu-open="menuOpen" />
 		<Menu :menu-open="menuOpen" />
 		<slot />

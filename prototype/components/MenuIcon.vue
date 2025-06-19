@@ -2,16 +2,17 @@
 	<button @click="toggleMenu">
 		<svg
 			view-box="0 0 100 100"
-			height="50"
-			width="50"
+			height="30"
+			width="30"
 			xmlns="http://www.w3.org/2000/svg"
+			class="mr-3"
 		>
 			<rect
 				x="0"
 				y="0"
 				width="100%"
 				height="5%"
-				class="fill-primary stroke-none transition-all duration-500 origin-center"
+				class="fill-base-content stroke-none transition-all duration-500 origin-center"
 				ref="rect1"
 			/>
 			<rect
@@ -19,7 +20,7 @@
 				y="47.5%"
 				width="100%"
 				height="5%"
-				class="fill-secondary stroke-none transition-all duration-500 origin-center"
+				class="fill-base-content stroke-none transition-all duration-500 origin-center"
 				ref="rect2"
 			/>
 			<rect
@@ -27,7 +28,7 @@
 				y="95%"
 				width="100%"
 				height="5%"
-				class="fill-accent stroke-none transition-all duration-500 origin-center"
+				class="fill-base-content stroke-none transition-all duration-500 origin-center"
 				ref="rect3"
 			/>
 		</svg>

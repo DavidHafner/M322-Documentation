@@ -1,4 +1,6 @@
 [
 	{ "name": "Home", "path": "/" },
-	{ "name": "Kontakt", "path": "/contact" }
+	{ "name": "Kontakt", "path": "/contact" },
+	{ "name": "Impressum", "path": "/impressum" },
+	{ "name": "Inhalt", "path": "/content" }
 ]
