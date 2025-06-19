@@ -67,12 +67,12 @@ const clearPath = (page: { name: string; path: string }) => {
 <style>
 .menu-close {
 	animation: menu-close 500ms;
-	opacity: 0;
+	transform: scale(1, 0);
 }
 
 .menu-start {
 	animation: menu-close 0ms;
-	opacity: 0;
+	transform: scale(1, 0);
 }
 .menu-open {
 	animation: menu-open 500ms;

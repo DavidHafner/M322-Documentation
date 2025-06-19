@@ -1,7 +1,38 @@
 <template>
-	<div>QR</div>
+	<div id="videoDiv" class="w-screen h-screen absolute top-0 left-0">
+		<video
+			ref="videoElement"
+			autoplay
+			class="w-screen h-screen bg-black"
+		></video>
+	</div>
 </template>
+<script setup lang="ts">
+const videoElement: Ref<null | HTMLVideoElement> = ref(null);
 
-<script lang="ts" setup></script>
+// const userAgent = window.navigator.userAgent.toLowerCase();
+// const isPC = /.*windows.*/.test(userAgent);
+const constraints = {
+	frameRate: 30,
+	width: window.innerWidth,
+	height: window.innerHeight,
+	resizeMode: ["crop-and-scale"],
+	advanced: [{ aspectRatio: window.innerWidth / window.innerHeight, zoom: 1 }],
+	// facingMode: !isPC ? { exact: "environment" } : undefined,
+};
 
-<style></style>
+const success = (localMediaStream: MediaStream) => {
+	if (!videoElement.value) {
+		alert("no camera detected or permission denied");
+		return;
+	}
+	videoElement.value.srcObject = localMediaStream;
+};
+onMounted(async () => {
+	const cameraInput = await navigator.mediaDevices.getUserMedia({
+		video: constraints,
+		audio: false,
+	});
+	success(cameraInput);
+});
+</script>
