@@ -1,5 +1,5 @@
 <template>
-	<div id="videoDiv" class="w-screen h-screen absolute top-0 left-0">
+	<div id="videoDiv">
 		<video
 			ref="videoElement"
 			autoplay

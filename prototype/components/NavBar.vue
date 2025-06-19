@@ -1,7 +1,7 @@
 <template>
 	<div class="navbar bg-base-100 shadow-sm">
 		<div class="flex">
-			<a class="btn btn-ghost text-xl">Logo</a>
+			<NuxtLink to="/" class="btn btn-ghost text-xl">Logo</NuxtLink>
 		</div>
 		<div class="flex gap-2 grow w-0">
 			<div class="breadcrumbs text-sm">

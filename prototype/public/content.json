@@ -1,0 +1,30 @@
+{
+	"title": "Inhalt",
+	"image": "https://www.dfb.ch/themes/dfb/assets/default-landscape.jpg",
+	"sections": [
+		{
+			"title": "Einführung",
+			"text": [
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id diam ex. Quisque consectetur feugiat arcu. Phasellus quis augue at libero mollis tincidunt. Nunc aliquam elit nec nulla lobortis condimentum. Ut at tortor aliquet ex cursus pharetra et vitae nulla. Proin dapibus lobortis fermentum. Nulla id sodales sem. Maecenas elementum diam libero. Ut risus velit, fringilla vitae feugiat non, interdum vitae lorem. ",
+				"Etiam diam nisl, sodales quis viverra eu, tincidunt nec nisl. Suspendisse potenti. Cras pulvinar urna lacus. Praesent tempus purus quis orci ultrices, a condimentum orci dictum. Suspendisse mattis aliquam lacus sit amet pharetra. Nulla facilisi. Mauris feugiat odio est, ac varius lorem ultricies non. Nunc ut urna nisl. ",
+				"Nam rhoncus, magna nec ultricies porta, felis nisi faucibus justo, ut lacinia dolor eros ut elit. Nulla bibendum ligula sed tempor malesuada. Duis ultricies enim vel felis malesuada accumsan. Nullam non dolor bibendum, cursus nisi quis, iaculis nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Morbi vel sem sit amet felis facilisis pharetra vitae eget sem. Proin non neque finibus orci imperdiet finibus. Donec pharetra suscipit felis vel gravida. In hac habitasse platea dictumst. Proin eget massa bibendum, porttitor ipsum venenatis, gravida turpis. Fusce ultricies purus eget mollis imperdiet. "
+			]
+		},
+		{
+			"title": "Haputteil",
+			"text": [
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id diam ex. Quisque consectetur feugiat arcu. Phasellus quis augue at libero mollis tincidunt. Nunc aliquam elit nec nulla lobortis condimentum. Ut at tortor aliquet ex cursus pharetra et vitae nulla. Proin dapibus lobortis fermentum. Nulla id sodales sem. Maecenas elementum diam libero. Ut risus velit, fringilla vitae feugiat non, interdum vitae lorem. ",
+				"Etiam diam nisl, sodales quis viverra eu, tincidunt nec nisl. Suspendisse potenti. Cras pulvinar urna lacus. Praesent tempus purus quis orci ultrices, a condimentum orci dictum. Suspendisse mattis aliquam lacus sit amet pharetra. Nulla facilisi. Mauris feugiat odio est, ac varius lorem ultricies non. Nunc ut urna nisl. ",
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper euismod diam id posuere. Fusce sed libero eu erat euismod condimentum id facilisis tellus. Aenean eget mauris suscipit, pretium quam sit amet, faucibus sapien. Phasellus finibus enim a convallis porta. Praesent volutpat pellentesque dolor quis imperdiet. Sed finibus suscipit congue. Aenean fermentum quam at dui finibus, quis lacinia justo luctus. Suspendisse et facilisis felis, eget ullamcorper lacus. Donec urna velit, placerat sit amet lacus vitae, consectetur fermentum nulla. Etiam consequat magna eget tortor tincidunt, vel mollis ex dictum. Integer tortor orci, imperdiet scelerisque aliquet sed, faucibus ut ex. Aenean luctus pulvinar velit, eget dictum orci. ",
+				"Mauris non urna nec libero rutrum vulputate sodales et orci. Donec dapibus, nibh vitae facilisis feugiat, sem libero eleifend lectus, in venenatis libero felis commodo ligula. Vivamus pellentesque fringilla nisl, vitae tempus nulla. Aenean gravida eros ipsum, sed consectetur neque auctor vel. Vestibulum eget tempor leo. Cras bibendum ac urna sed blandit. Aliquam et mi at orci laoreet egestas quis a neque. Morbi fermentum enim sed magna aliquam, nec mattis lorem tincidunt. ",
+				"Nam rhoncus, magna nec ultricies porta, felis nisi faucibus justo, ut lacinia dolor eros ut elit. Nulla bibendum ligula sed tempor malesuada. Duis ultricies enim vel felis malesuada accumsan. Nullam non dolor bibendum, cursus nisi quis, iaculis nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Morbi vel sem sit amet felis facilisis pharetra vitae eget sem. Proin non neque finibus orci imperdiet finibus. Donec pharetra suscipit felis vel gravida. In hac habitasse platea dictumst. Proin eget massa bibendum, porttitor ipsum venenatis, gravida turpis. Fusce ultricies purus eget mollis imperdiet. "
+			]
+		},
+		{
+			"title": "Ende",
+			"text": [
+				"Nam rhoncus, magna nec ultricies porta, felis nisi faucibus justo, ut lacinia dolor eros ut elit. Nulla bibendum ligula sed tempor malesuada. Duis ultricies enim vel felis malesuada accumsan. Nullam non dolor bibendum, cursus nisi quis, iaculis nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Morbi vel sem sit amet felis facilisis pharetra vitae eget sem. Proin non neque finibus orci imperdiet finibus. Donec pharetra suscipit felis vel gravida. In hac habitasse platea dictumst. Proin eget massa bibendum, porttitor ipsum venenatis, gravida turpis. Fusce ultricies purus eget mollis imperdiet. "
+			]
+		}
+	]
+}
