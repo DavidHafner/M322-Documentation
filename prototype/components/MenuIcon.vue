@@ -45,16 +45,19 @@ const toggleMenu = () => {
 	} else {
 		isOpen.value = !isOpen.value;
 	}
+};
+
+watch(isOpen, () => {
 	if (isOpen.value) {
-		rect1.value?.classList.remove("close");
-		rect2.value?.classList.remove("close");
-		rect3.value?.classList.remove("close");
-	} else {
 		rect1.value?.classList.add("close");
 		rect2.value?.classList.add("close");
 		rect3.value?.classList.add("close");
+	} else {
+		rect1.value?.classList.remove("close");
+		rect2.value?.classList.remove("close");
+		rect3.value?.classList.remove("close");
 	}
-};
+});
 
 const rect1 = ref<SVGRectElement>();
 const rect2 = ref<SVGRectElement>();

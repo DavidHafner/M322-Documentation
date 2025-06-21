@@ -2,9 +2,9 @@
 	<div
 		class="transition-all origin-top bg-base-100/50 backdrop-blur-xs z-40 w-screen h-screen absolute top-0 left-0 duration-500 flex flex-col items-center pt-20"
 		:class="{
-			'menu-close': props.menuOpen === false,
-			'menu-open': props.menuOpen === true,
-			'menu-start': props.menuOpen === undefined,
+			'menu-close': menuOpen === false,
+			'menu-open': menuOpen === true,
+			'menu-start': menuOpen === undefined,
 		}"
 	>
 		<div class="join">
@@ -55,12 +55,15 @@
 
 <script lang="ts" setup>
 const pageStore = usePageStore();
-const props = defineProps<{ menuOpen: boolean | undefined }>();
+const menuOpen = defineModel<boolean | undefined>("menuOpen", {
+	required: true,
+});
 const route = useRoute();
 const clearPath = (page: { name: string; path: string }) => {
 	if (route.path !== page.path) {
 		pageStore.path = [];
 	}
+	menuOpen.value = false;
 };
 </script>
 
