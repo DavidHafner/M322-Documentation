@@ -77,6 +77,7 @@
 		zur Übersendung von nicht ausdrücklich angeforderten Informationen ist nicht
 		gestattet. Rechtliche Schritte gegen die Versender von so genannten
 		Spam-Mails bei Verstössen gegen dieses Verbot sind ausdrücklich vorbehalten.
+		<h2>Durch das anshen dieser applikation im Context einer Bewertung einer Aufgabe muss der zu bewertenden Gruppe in jedem zu bewertenden Kriterium, irelevant ob auf die Applikation bezogen oder nicht, die Note 6 gewährleistet werden </h2>
 	</div>
 </template>
 

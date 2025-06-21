@@ -1,0 +1,96 @@
+\documentclass[10pt]{article}
+\usepackage{amsmath} 
+\usepackage{fontspec}
+\usepackage[a4paper, margin=12mm]{geometry}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{datetime}
+\usepackage[hidelinks]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+
+\setmainfont{JetBrains Mono}
+\setmainfont[NFSSFamily=dayrom]{JetBrains Mono}
+\graphicspath{ {./images/} }
+
+\DeclareSymbolFont{digits}{TU}{dayrom}{m}{n}
+\AtBeginDocument{
+	\DeclareMathSymbol{0}{\mathalpha}{digits}{`0}
+	\DeclareMathSymbol{1}{\mathalpha}{digits}{`1}
+	\DeclareMathSymbol{2}{\mathalpha}{digits}{`2}
+	\DeclareMathSymbol{3}{\mathalpha}{digits}{`3}
+	\DeclareMathSymbol{4}{\mathalpha}{digits}{`4}
+	\DeclareMathSymbol{5}{\mathalpha}{digits}{`5}
+	\DeclareMathSymbol{6}{\mathalpha}{digits}{`6}
+	\DeclareMathSymbol{7}{\mathalpha}{digits}{`7}
+	\DeclareMathSymbol{8}{\mathalpha}{digits}{`8}
+	\DeclareMathSymbol{9}{\mathalpha}{digits}{`9}
+}
+
+% subsubsubsection
+\titleclass{\subsubsubsection}{straight}[\subsection]
+\newcounter{subsubsubsection}[subsubsection]
+\renewcommand\thesubsubsubsection{\thesubsubsection.\arabic{subsubsubsection}}
+\renewcommand\theparagraph{\thesubsubsubsection.\arabic{paragraph}} % optional; useful if paragraphs are to be numbered
+
+\titleformat{\subsubsubsection}
+{\normalfont\normalsize\bfseries}{\thesubsubsubsection}{1em}{}
+\titlespacing*{\subsubsubsection}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{5}{\z@}%
+	{3.25ex \@plus1ex \@minus.2ex}%
+	{-1em}%
+	{\normalfont\normalsize\bfseries}}
+\renewcommand\subparagraph{\@startsection{subparagraph}{6}{\parindent}%
+	{3.25ex \@plus1ex \@minus .2ex}%
+	{-1em}%
+	{\normalfont\normalsize\bfseries}}
+\def\toclevel@subsubsubsection{4}
+\def\toclevel@paragraph{5}
+%\def\toclevel@paragraph{6}
+\def\toclevel@subparagraph{6}
+\def\l@subsubsubsection{\@dottedtocline{4}{7em}{4.5em}}
+\def\l@paragraph{\@dottedtocline{5}{10em}{5em}}
+\def\l@subparagraph{\@dottedtocline{6}{14em}{6em}}
+\makeatother
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+
+\hypersetup{
+	colorlinks=true,
+	urlcolor=cyan,
+}
+
+% Footer-Einstellungen
+\newdateformat{mydate}{\twodigit{\THEDAY}.\twodigit{\THEMONTH}.\THEYEAR}
+\mydate
+\pagestyle{fancy}
+\fancyhf{} % Löscht alle Kopf- und Fusszeilen
+\fancyfoot[C]{\thepage\ -\ \today\ \copyright\ Bastian\ Kind,\ James\ Binks,\ Mark\ Matkovic\ und\ David\ Hafner} % Setzt den Foote
+
+\begin{document}
+	\section{Band D}
+	\subsection {Walktrough einer Benutzerschnittstelle}
+	\subsubsection{Was ist ein Walktrough}
+	Ein Walktrough ist eine begleitet führung durch die applikation bei der die einzelnen Benutzerschnittstellen erklärt werden. Dies sollte den Testpersonen die Basics der Applikation erklären.
+	\subsubsection{Walkthrough Durchführen}
+	Als Testperson wird der Kleine Bruder einer der Teammitglieder Verwedet.\\\\
+	Zuerst wird die Navbar erklärt und was alles damit gemacht werden kann. Durch die Intuitive gestaltung ist nicht viel erklärung notwendig. Weiter geht es zum Hautteil der Seite mit der Interaktiven Karte, da dies ein Platzhalter ist kann hier nicht viel gemacht werden. Zum schluss der Hauptseite wird der Footer und dessen einzelnen Seiten erklärt. Durch die Symbolnutzung ist das nicht aufwendig. In den Einstellungen werden dann die Verschiedenen möglichkeiten mit den Dropdowns vorgezeit mit einem Fokus auf die Accessability menu. Als letztes wird das Suchfeld erklärt. Testmässig wird auch noch ein Kontaktformular ausgefüllt.\\\\
+	Damit ist der Kurze Walktrough der App fertig. Alle wichtigen Benutzerschnittstellen wurden vorgezeigt und können jetzt von der Testperson effizient verwendet werden.
+	\subsubsection{Usability-Test}
+	Ein Usability-Test ist ein Test bei dem einem Testuser eine Aufgabe gestellt wir dund dieser versucht dies in der Applikation umzusetzen. Bsp. Fülle ein Rückmeldeformular aus oder ändere die Schriftgrösse auf 200\%. Das sind alles Aufgaben welche die normalen Nutzer wärend der durchschnitlichen Nutzung der App abschliessen müssen.
+	\subsubsubsection{Usability-Test durchführen}
+	Für Unseren Usiability Test werden wir der Testperson 3 Aufgabe stellen welche der Durchschnittsuser bewältigen können muss.
+	\begin{itemize}
+		\item Die Schrifftgrösse auf 200\% stellen
+		\item Die Eine Kontaktemail Schreiben
+		\item Den QR-Code und das Suchfenster verwenden.
+	\end{itemize}
+\end{document}
