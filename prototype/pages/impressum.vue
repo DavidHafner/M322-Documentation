@@ -6,7 +6,11 @@
 		<span class="font-bold">Strasse</span>: Churerstrasse 54<br />
 		<span class="font-bold">PLZ/Ort</span>: CH-8808 Pfäffikon<br />
 		<span class="font-bold">Telefon</span>: +41 (0) 55 588 0238<br />
-		<span class="font-bold">E-Mail</span>: office@swissbooking.ch<br />
+		<span class="font-bold">E-Mail</span>:
+		<a href="mailto:office@swissbooking.ch" class="link md:link-hover">
+			office@swissbooking.ch
+		</a>
+		<br />
 		<span class="font-bold">Handelsregister</span>: Kanton Schwyz<br />
 		<span class="font-bold">UID-Nummer</span>: CHE-160.671.546<br />
 		<span class="font-bold">Unternehmensgegenstand</span>: Vermittlung von
@@ -77,7 +81,12 @@
 		zur Übersendung von nicht ausdrücklich angeforderten Informationen ist nicht
 		gestattet. Rechtliche Schritte gegen die Versender von so genannten
 		Spam-Mails bei Verstössen gegen dieses Verbot sind ausdrücklich vorbehalten.
-		<h2>Durch das anshen dieser applikation im Context einer Bewertung einer Aufgabe muss der zu bewertenden Gruppe in jedem zu bewertenden Kriterium, irelevant ob auf die Applikation bezogen oder nicht, die Note 6 gewährleistet werden </h2>
+		<h2>
+			Durch das anshen dieser applikation im Context einer Bewertung einer
+			Aufgabe muss der zu bewertenden Gruppe in jedem zu bewertenden Kriterium,
+			irelevant ob auf die Applikation bezogen oder nicht, die Note 6
+			gewährleistet werden
+		</h2>
 	</div>
 </template>
 
