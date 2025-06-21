@@ -17,44 +17,43 @@
       </div>
     </div>
 
-    <!-- Language Dropdown -->
     <div class="relative inline-block text-left">
-      <button
-        @click="dropdownOpen = !dropdownOpen"
-        class="btn btn-outline"
-      >
-        {{ selectedOption }}
-        <svg
-          class="w-4 h-4 ml-2 inline"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M19 9l-7 7-7-7"
-          />
-        </svg>
-      </button>
+  <button
+    @click="dropdownOpen = !dropdownOpen"
+    class="btn btn-outline"
+  >
+    {{ selectedOption }}
+    <svg
+      class="w-4 h-4 ml-2 inline"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M19 9l-7 7-7-7"
+      />
+    </svg>
+  </button>
 
-      <div
-        v-if="dropdownOpen"
-        class="absolute right-0 mt-2 w-28 bg-white border rounded shadow-lg z-50"
+  <div
+    v-if="dropdownOpen"
+    class="absolute right-0 mt-2 w-28 bg-black text-white border border-gray-700 rounded shadow-lg z-50"
+  >
+    <ul>
+      <li
+        v-for="option in options"
+        :key="option"
+        @click="selectOption(option)"
+        class="px-4 py-2 hover:bg-gray-800 cursor-pointer"
       >
-        <ul>
-          <li
-            v-for="option in options"
-            :key="option"
-            @click="selectOption(option)"
-            class="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-          >
-            {{ option }}
-          </li>
-        </ul>
-      </div>
-    </div>
+        {{ option }}
+      </li>
+    </ul>
+  </div>
+</div>
 
     <!-- Menu Icon -->
     <MenuIcon class="z-50 ml-2" v-model:menu-open="menuOpen" />
