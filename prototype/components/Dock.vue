@@ -14,28 +14,28 @@
 			>
 				<path
 					d="M20 18V20H18M20 14H19L17 16M16 18H14V20M4 4H10V10H4V4ZM14 4H20V10H14V4ZM4 14H10V20H4V14ZM14 14V15H15V14H14Z"
-					class="stroke-white stroke-1"
+					class="stroke-current stroke-1"
 					stroke-linecap="round"
 					stroke-linejoin="round"
 					stroke-width="2"
 				/>
 				<path
 					d="M17 7H17.001"
-					class="stroke-white stroke-1"
+					class="stroke-current stroke-1"
 					stroke-linecap="round"
 					stroke-linejoin="round"
 					stroke-width="2"
 				/>
 				<path
 					d="M7 7H7.001"
-					class="stroke-white stroke-1"
+					class="stroke-current stroke-1"
 					stroke-linecap="round"
 					stroke-linejoin="round"
 					stroke-width="2"
 				/>
 				<path
 					d="M7 17H7.001"
-					class="stroke-white stroke-1"
+					class="stroke-current stroke-1"
 					stroke-linecap="round"
 					stroke-linejoin="round"
 					stroke-width="2"
@@ -78,14 +78,14 @@
 						<path
 							d="M19,9.8 C19,13.7585 13.6628,18.581 12.3092,19.7405 C12.1299,19.894 11.8701,19.894 11.6908,19.7405 C10.3372,18.581 5,13.7585 5,9.8 C5,6.04446 8.13401,3 12,3 C15.866,3 19,6.04446 19,9.8 Z"
 							id="Path"
-							class="stroke-white stroke-1"
+							class="stroke-current stroke-1"
 							stroke-width="2"
 							stroke-linecap="round"
 						></path>
 
 						<circle
 							id="Oval"
-							class="stroke-white stroke-1"
+							class="stroke-current stroke-1"
 							stroke-width="2"
 							stroke-linecap="round"
 							cx="12"
