@@ -10,10 +10,12 @@
 \usepackage{datetime}
 \usepackage[hidelinks]{hyperref}
 \usepackage[utf8]{inputenc}
+\usepackage{enumitem}
 \usepackage{booktabs}
+\usepackage{pifont}
 
-\setmainfont{Arial}
-\setmainfont[NFSSFamily=dayrom]{Arial}
+\setmainfont{JetBrains Mono}
+\setmainfont[NFSSFamily=dayrom]{JetBrains Mono}
 \graphicspath{ {./images/} }
 
 \DeclareSymbolFont{digits}{TU}{dayrom}{m}{n}
@@ -35,6 +37,9 @@
 \newcounter{subsubsubsection}[subsubsection]
 \renewcommand\thesubsubsubsection{\thesubsubsection.\arabic{subsubsubsection}}
 \renewcommand\theparagraph{\thesubsubsubsection.\arabic{paragraph}} % optional; useful if paragraphs are to be numbered
+\newcommand{\cmark}{\ding{51}} % Haken
+\newcommand{\xmark}{\ding{55}} % Kreuz
+\newcommand{\checkbox}{$\square$} % leere Checkbox
 
 \titleformat{\subsubsubsection}
 {\normalfont\normalsize\bfseries}{\thesubsubsubsection}{1em}{}
@@ -66,6 +71,7 @@
 \hypersetup{
 	colorlinks=true,
 	urlcolor=cyan,
+	linkcolor=
 }
 
 % Footer-Einstellungen
@@ -74,10 +80,7 @@
 \pagestyle{fancy}
 \fancyhf{} % Löscht alle Kopf- und Fusszeilen
 \fancyfoot[C]{\thepage\ -\ \today\ \copyright\ Bastian\ Kind,\ James\ Binks,\ Mark\ Matkovic\ und\ David\ Hafner} % Setzt den Foote
-
 \title{DFB Entdecker App}
-\author{Bastian Kind, James Binks, Mark Matkovic und David Hafner}
-
 \begin{document}
 	\maketitle
 	\includegraphics[width=17.5cm]{title}
