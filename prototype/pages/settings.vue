@@ -5,6 +5,7 @@
 			<div class="collapse-title font-semibold">Accessibility</div>
 			<div class="collapse-content text-sm">
 				<span class="label">Schriftgrösse</span>
+				<br />
 				<label class="input mb-4">
 					<input
 						type="range"
@@ -15,6 +16,7 @@
 					/>
 					<span class="label max-w-16 min-w-16">{{ fontSize }}%</span>
 				</label>
+				<br />
 				<label class="toggle text-base-content">
 					<input type="checkbox" />
 					<svg
@@ -100,6 +102,7 @@
 			</div>
 		</div>
 	</div>
+	<br />
 	<label class="toggle text-base-content ml-4">
 		<input type="checkbox" />
 		<svg
