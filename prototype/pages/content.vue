@@ -43,6 +43,7 @@
 </template>
 
 <script lang="ts" setup>
+const runtimeConfig = useRuntimeConfig();
 const content = ref<{
 	title: string;
 	sections: { title: string; text: string[] }[];
@@ -50,7 +51,9 @@ const content = ref<{
 }>();
 
 onMounted(async () => {
-	content.value = await (await fetch("/content.json")).json();
+	content.value = await (
+		await fetch(runtimeConfig.app.baseURL + "content.json")
+	).json();
 });
 
 const pageStore = usePageStore();
